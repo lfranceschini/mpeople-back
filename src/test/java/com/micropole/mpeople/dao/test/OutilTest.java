@@ -1,10 +1,11 @@
 package com.micropole.mpeople.dao.test;
 
 import com.micropole.mpeople.entities.OutilEntity;
-import com.micropole.mpeople.service.OutilService;
+import com.micropole.mpeople.service.MpeopleService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit4.SpringRunner;
 import java.util.List;
@@ -23,11 +24,12 @@ import static org.junit.Assert.*;
 public class OutilTest{
 
     @Autowired
-    private OutilService outilService;
+    @Qualifier(value = "outilService")
+    private MpeopleService outilService;
 
     @Test
     public void testGetAllOutils(){
-        List<OutilEntity> outils = outilService.getAllOutils();
+        List<OutilEntity> outils = outilService.getAll();
 
         assertThat(outils, is(notNullValue()));
         assertThat(outils, contains(hasProperty("label", is("talend")), hasProperty("label", is("eclipse"))));
@@ -35,7 +37,7 @@ public class OutilTest{
 
     @Test
     public void testGetOutilById(){
-        OutilEntity outil = outilService.getOutilById(0);
+        OutilEntity outil = (OutilEntity) outilService.getOneById(0);
 
         assertThat(outil.getLabel(), is(equalTo("talend")));
     }
