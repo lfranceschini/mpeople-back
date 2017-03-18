@@ -177,9 +177,9 @@ CREATE TABLE ass_collaborateur_formation (
 -- Table tv_langage
 -- -----------------------------------------------------
 CREATE TABLE tv_langage (
-  id INT NOT NULL PRIMARY KEY ,
+  id INT NOT NULL IDENTITY PRIMARY KEY ,
   label VARCHAR(45) NOT NULL ,
-  version INT NOT NULL ,
+  version VARCHAR(45) NOT NULL ,
   PRIMARY KEY (id)  )
 
 ;
