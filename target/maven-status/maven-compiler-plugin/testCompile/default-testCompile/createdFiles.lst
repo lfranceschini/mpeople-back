@@ -1,1 +1,3 @@
-com/micropole/mpeople/dao/test/CollaborateurDaoTest.class
+com/micropole/mpeople/service/test/CollaborateurDaoTest.class
+com/micropole/mpeople/service/test/LangageServiceTest.class
+com/micropole/mpeople/service/test/OutilTest.class

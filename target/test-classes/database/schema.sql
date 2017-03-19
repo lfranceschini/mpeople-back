@@ -298,9 +298,9 @@ CREATE TABLE ass_langage_mission (
 -- Table tv_methodo
 -- -----------------------------------------------------
 CREATE TABLE tv_methodo (
-  id INT NOT NULL PRIMARY KEY ,
+  id INT NOT NULL IDENTITY PRIMARY KEY ,
   label VARCHAR(45) NOT NULL ,
-  version INT NOT NULL ,
+  version VARCHAR(45) NOT NULL ,
   PRIMARY KEY (id)  )
 
 ;

@@ -2,6 +2,7 @@ com/micropole/mpeople/service/CollaborateurService.class
 com/micropole/mpeople/entities/DomaineEntity.class
 com/micropole/mpeople/repositories/PosteRepository.class
 com/micropole/mpeople/serviceImpl/OutilServiceImpl.class
+com/micropole/mpeople/service/MpeopleService.class
 com/micropole/mpeople/entities/PosteEntity.class
 com/micropole/mpeople/serviceImpl/CollaborateurServiceImpl.class
 com/micropole/mpeople/entities/Type.class
@@ -14,6 +15,7 @@ com/micropole/mpeople/controller/DomaineController.class
 com/micropole/mpeople/controller/LangageController.class
 com/micropole/mpeople/mapper/CollaborateurMapper.class
 com/micropole/mpeople/serviceImpl/DomaineServiceImpl.class
+com/micropole/mpeople/entities/Langage.class
 com/micropole/mpeople/entities/Collaborateur.class
 com/micropole/mpeople/controller/CollaborateurController.class
 com/micropole/mpeople/controller/PoleController.class
