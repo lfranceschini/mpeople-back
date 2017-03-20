@@ -352,7 +352,7 @@ CREATE TABLE ass_outil_mission (
 -- Table tv_domaine
 -- -----------------------------------------------------
 CREATE TABLE tv_domaine (
-  id INT NOT NULL PRIMARY KEY ,
+  id INT NOT NULL IDENTITY PRIMARY KEY ,
   label VARCHAR(45) NOT NULL ,
   PRIMARY KEY (id)  )
 
@@ -363,7 +363,7 @@ CREATE TABLE tv_domaine (
 -- Table tv_client
 -- -----------------------------------------------------
 CREATE TABLE tv_client (
-  id INT NOT NULL PRIMARY KEY ,
+  id INT NOT NULL IDENTITY PRIMARY KEY ,
   label VARCHAR(45) NOT NULL ,
   tv_domaine_id INT NOT NULL ,
   PRIMARY KEY (id)  ,

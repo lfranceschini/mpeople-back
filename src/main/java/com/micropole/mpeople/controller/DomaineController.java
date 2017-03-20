@@ -26,9 +26,9 @@ public class DomaineController {
         return domaineService.getAll();
     }
 
-    @RequestMapping(value = "/getDomaineById/{idPole}", produces = "application/json")
-    public DomaineEntity getDomaineById(@PathVariable int idPole){
-        return (DomaineEntity) domaineService.getOneById(idPole);
+    @RequestMapping(value = "/getDomaineById/{idDomaine}", produces = "application/json")
+    public DomaineEntity getDomaineById(@PathVariable int idDomaine){
+        return (DomaineEntity) domaineService.getOneById(idDomaine);
     }
 
 }
