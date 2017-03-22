@@ -1,6 +1,7 @@
 package com.micropole.mpeople.controller;
 
-import com.micropole.mpeople.core.entity.DomaineEntity;
+import com.micropole.mpeople.core.entity.Domaine;
+import com.micropole.mpeople.core.entity.Domaine;
 import com.micropole.mpeople.service.MpeopleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -22,13 +23,13 @@ public class DomaineController {
     private MpeopleService domaineService;
 
     @RequestMapping(value = "/getAllDomaines", produces = "application/json")
-    public List<DomaineEntity> getAllDomaines(){
+    public List<Domaine> getAllDomaines(){
         return domaineService.getAll();
     }
 
     @RequestMapping(value = "/getDomaineById/{idDomaine}", produces = "application/json")
-    public DomaineEntity getDomaineById(@PathVariable int idDomaine){
-        return (DomaineEntity) domaineService.getOneById(idDomaine);
+    public Domaine getDomaineById(@PathVariable int idDomaine){
+        return (Domaine) domaineService.getOneById(idDomaine);
     }
 
 }
