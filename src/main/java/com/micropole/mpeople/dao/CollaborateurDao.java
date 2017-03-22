@@ -1,6 +1,6 @@
 package com.micropole.mpeople.dao;
 
-import com.micropole.mpeople.entities.Collaborateur;
+import com.micropole.mpeople.core.entity.Collaborateur;
 
 import java.util.List;
 

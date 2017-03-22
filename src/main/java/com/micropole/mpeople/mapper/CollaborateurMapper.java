@@ -1,8 +1,8 @@
 package com.micropole.mpeople.mapper;
 
-import com.micropole.mpeople.dto.CollaborateurDTO;
-import com.micropole.mpeople.entities.Collaborateur;
-import com.micropole.mpeople.entities.PoleEntity;
+import com.micropole.mpeople.core.dto.CollaborateurDTO;
+import com.micropole.mpeople.core.entity.Collaborateur;
+import com.micropole.mpeople.core.entity.PoleEntity;
 
 /**
  * Created by lfranceschini on 10/03/2017.

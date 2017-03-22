@@ -1,7 +1,7 @@
 package com.micropole.mpeople.controller;
 
-import com.micropole.mpeople.dto.CollaborateurDTO;
-import com.micropole.mpeople.entities.Collaborateur;
+import com.micropole.mpeople.core.dto.CollaborateurDTO;
+import com.micropole.mpeople.core.entity.Collaborateur;
 import com.micropole.mpeople.service.CollaborateurService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;

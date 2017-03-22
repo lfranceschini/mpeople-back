@@ -1,6 +1,6 @@
 package com.micropole.mpeople.controller;
 
-import com.micropole.mpeople.entities.OutilEntity;
+import com.micropole.mpeople.core.entity.OutilEntity;
 import com.micropole.mpeople.service.MpeopleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
