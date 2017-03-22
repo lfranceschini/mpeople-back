@@ -2,7 +2,7 @@ package com.micropole.mpeople.mapper;
 
 import com.micropole.mpeople.core.dto.CollaborateurDTO;
 import com.micropole.mpeople.core.entity.Collaborateur;
-import com.micropole.mpeople.core.entity.PoleEntity;
+import com.micropole.mpeople.core.entity.Pole;
 
 /**
  * Created by lfranceschini on 10/03/2017.
@@ -16,9 +16,9 @@ public class CollaborateurMapper {
         collaborateur.setNom(collaborateurDTO.getNom());
         collaborateur.setPrenom(collaborateurDTO.getPrenom());
         collaborateur.setDate_arrivee(collaborateurDTO.getDate_arrivee());
-        PoleEntity pole = new PoleEntity();
+        Pole pole = new Pole();
         pole.setId(collaborateurDTO.getPoleId());
-        collaborateur.setPoleEntity(pole);
+        collaborateur.setPole(pole);
         return collaborateur;
 
     }

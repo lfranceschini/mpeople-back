@@ -1,6 +1,6 @@
 package com.micropole.mpeople.controller;
 
-import com.micropole.mpeople.core.entity.OutilEntity;
+import com.micropole.mpeople.core.entity.Outil;
 import com.micropole.mpeople.service.MpeopleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -22,13 +22,13 @@ public class OutilController {
     private MpeopleService outilService;
 
     @RequestMapping(value = "/getAllOutils", produces = "application/json")
-    public List<OutilEntity> getAllOutils(){
+    public List<Outil> getAllOutils(){
         return outilService.getAll();
     }
 
     @RequestMapping(value = "/getOutilById/{idOutil}", produces = "application/json")
-    public OutilEntity getOutilById(@PathVariable int idOutil){
-        return (OutilEntity) outilService.getOneById(idOutil);
+    public Outil getOutilById(@PathVariable int idOutil){
+        return (Outil) outilService.getOneById(idOutil);
     }
 
 }

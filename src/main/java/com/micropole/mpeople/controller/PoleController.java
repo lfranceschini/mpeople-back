@@ -1,6 +1,6 @@
 package com.micropole.mpeople.controller;
 
-import com.micropole.mpeople.core.entity.PoleEntity;
+import com.micropole.mpeople.core.entity.Pole;
 import com.micropole.mpeople.service.MpeopleService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -22,13 +22,13 @@ public class PoleController {
     private MpeopleService poleService;
 
     @RequestMapping(value = "/getAllPoles", produces = "application/json")
-    public List<PoleEntity> getAllPoles(){
+    public List<Pole> getAllPoles(){
         return poleService.getAll();
     }
 
     @RequestMapping(value = "/getPoleById/{idPole}", produces = "application/json")
-    public PoleEntity getPoleById(@PathVariable int idPole){
-        return (PoleEntity) poleService.getOneById(idPole);
+    public Pole getPoleById(@PathVariable int idPole){
+        return (Pole) poleService.getOneById(idPole);
     }
 
 
