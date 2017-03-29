@@ -1,8 +1,11 @@
 package com.micropole.mpeople.service.impl;
 
 import com.micropole.mpeople.core.entity.Domaine;
+import com.micropole.mpeople.exception.NoDataFoundException;
 import com.micropole.mpeople.repositorie.DomaineRepository;
 import com.micropole.mpeople.service.MpeopleService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 
@@ -19,11 +22,15 @@ public class DomaineServiceImpl implements MpeopleService<Domaine> {
 
     @Override
     public List<Domaine> getAll() {
+
         return (List<Domaine>) domaineRepository.findAll();
     }
 
     @Override
     public Domaine getOneById(int id) {
-        return domaineRepository.findOne(id);
+
+        Domaine domaine = domaineRepository.findOne(id);
+
+        return domaine;
     }
 }

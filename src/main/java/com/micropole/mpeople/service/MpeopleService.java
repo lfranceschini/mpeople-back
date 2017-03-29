@@ -1,5 +1,7 @@
 package com.micropole.mpeople.service;
 
+import com.micropole.mpeople.exception.NoDataFoundException;
+
 import java.util.List;
 
 /**

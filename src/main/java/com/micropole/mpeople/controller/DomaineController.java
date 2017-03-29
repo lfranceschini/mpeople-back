@@ -2,7 +2,10 @@ package com.micropole.mpeople.controller;
 
 import com.micropole.mpeople.core.entity.Domaine;
 import com.micropole.mpeople.core.entity.Domaine;
+import com.micropole.mpeople.exception.NoDataFoundException;
 import com.micropole.mpeople.service.MpeopleService;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -22,6 +25,8 @@ public class DomaineController {
     @Qualifier(value = "domaineService")
     private MpeopleService domaineService;
 
+    private final static Logger LOGGER = LoggerFactory.getLogger(DomaineController.class);
+
     @RequestMapping(value = "/getAllDomaines", produces = "application/json")
     public List<Domaine> getAllDomaines(){
         return domaineService.getAll();
@@ -29,7 +34,11 @@ public class DomaineController {
 
     @RequestMapping(value = "/getDomaineById/{idDomaine}", produces = "application/json")
     public Domaine getDomaineById(@PathVariable int idDomaine){
-        return (Domaine) domaineService.getOneById(idDomaine);
+        Domaine domaine = null;
+
+            domaine = (Domaine) domaineService.getOneById(idDomaine);
+
+        return domaine;
     }
 
 }

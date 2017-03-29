@@ -15,7 +15,6 @@ import java.util.List;
  */
 
 @RunWith(SpringRunner.class)
-@ContextConfiguration(locations = "/applicationContext.xml")
 public class CollaborateurDaoTest {
 
     @Autowired

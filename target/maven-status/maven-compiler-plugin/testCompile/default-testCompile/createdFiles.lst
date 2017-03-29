@@ -1,3 +1,6 @@
 com/micropole/mpeople/service/test/CollaborateurDaoTest.class
+com/micropole/mpeople/service/test/OutilServiceTest.class
 com/micropole/mpeople/service/test/LangageServiceTest.class
-com/micropole/mpeople/service/test/OutilTest.class
+com/micropole/mpeople/service/test/RendezVousServiceTest.class
+com/micropole/mpeople/service/test/MethodoServiceTest.class
+com/micropole/mpeople/service/test/ClientServiceTest.class
